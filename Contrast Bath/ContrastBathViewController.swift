@@ -24,6 +24,20 @@ extension ContrastBathViewController: TimePickedDelegate {
     }
 }
 
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+    
+    convenience init(netHex:Int) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+    }
+}
+
 // Main VC - was called "StopWatch" or "SW" in the original sample app
 class ContrastBathViewController: UIViewController {
     
@@ -51,6 +65,9 @@ class ContrastBathViewController: UIViewController {
     var keepPlayingAlarm:Bool = false;
     var alarmAudio:AVAudioPlayer!
     var myStopTime:NSDate!
+    
+    var colorEnabled = UIColor(netHex:0x007AFF)
+    var colorDisabled = UIColor(netHex:0xB8B8B8)
     
     // if true, user opened app without tapping notification so we need to skip the real notification
     var skipBecauseUserDidNotTapNotification:Bool = false;
@@ -177,6 +194,8 @@ class ContrastBathViewController: UIViewController {
         // now you can enter debug mode. can't enter debug mode while running.
         DebugButton.enabled = true
         helpAboutButton.enabled = true
+        helpAboutButton.outlineColor = colorEnabled
+        helpAboutButton.setTitleColor(colorEnabled, forState: UIControlState.Normal)
     }
     
     @IBAction func startStopTimer(sender: AnyObject) {
@@ -199,6 +218,8 @@ class ContrastBathViewController: UIViewController {
             //too late to enter debug mode
             DebugButton.enabled = false
             helpAboutButton.enabled = false
+            helpAboutButton.outlineColor = colorDisabled
+            helpAboutButton.setTitleColor(colorDisabled, forState: UIControlState.Normal)
             
             startTimer()
         }
