@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46A2E7031B59FFB500327A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7021B59FFB500327A56 /* AppDelegate.swift */; };
+		46A2E7051B59FFB500327A56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7041B59FFB500327A56 /* ViewController.swift */; };
+		46A2E7081B59FFB500327A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E7061B59FFB500327A56 /* Main.storyboard */; };
+		46A2E70A1B59FFB500327A56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E7091B59FFB500327A56 /* Images.xcassets */; };
+		46A2E70D1B59FFB500327A56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E70B1B59FFB500327A56 /* LaunchScreen.xib */; };
+		46A2E7191B59FFB500327A56 /* Contrast_BathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7181B59FFB500327A56 /* Contrast_BathTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46A2E7131B59FFB500327A56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46A2E6F51B59FFB500327A56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46A2E6FC1B59FFB500327A56;
+			remoteInfo = "Contrast Bath";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46A2E6FD1B59FFB500327A56 /* Contrast Bath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contrast Bath.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A2E7011B59FFB500327A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A2E7021B59FFB500327A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46A2E7041B59FFB500327A56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46A2E7071B59FFB500327A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46A2E7091B59FFB500327A56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46A2E70C1B59FFB500327A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		46A2E7121B59FFB500327A56 /* Contrast BathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contrast BathTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46A2E7171B59FFB500327A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A2E7181B59FFB500327A56 /* Contrast_BathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contrast_BathTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46A2E6FA1B59FFB500327A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A2E70F1B59FFB500327A56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46A2E6F41B59FFB500327A56 = {
+			isa = PBXGroup;
+			children = (
+				46A2E6FF1B59FFB500327A56 /* Contrast Bath */,
+				46A2E7151B59FFB500327A56 /* Contrast BathTests */,
+				46A2E6FE1B59FFB500327A56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46A2E6FE1B59FFB500327A56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46A2E6FD1B59FFB500327A56 /* Contrast Bath.app */,
+				46A2E7121B59FFB500327A56 /* Contrast BathTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46A2E6FF1B59FFB500327A56 /* Contrast Bath */ = {
+			isa = PBXGroup;
+			children = (
+				46A2E7021B59FFB500327A56 /* AppDelegate.swift */,
+				46A2E7041B59FFB500327A56 /* ViewController.swift */,
+				46A2E7061B59FFB500327A56 /* Main.storyboard */,
+				46A2E7091B59FFB500327A56 /* Images.xcassets */,
+				46A2E70B1B59FFB500327A56 /* LaunchScreen.xib */,
+				46A2E7001B59FFB500327A56 /* Supporting Files */,
+			);
+			path = "Contrast Bath";
+			sourceTree = "<group>";
+		};
+		46A2E7001B59FFB500327A56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A2E7011B59FFB500327A56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46A2E7151B59FFB500327A56 /* Contrast BathTests */ = {
+			isa = PBXGroup;
+			children = (
+				46A2E7181B59FFB500327A56 /* Contrast_BathTests.swift */,
+				46A2E7161B59FFB500327A56 /* Supporting Files */,
+			);
+			path = "Contrast BathTests";
+			sourceTree = "<group>";
+		};
+		46A2E7161B59FFB500327A56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46A2E7171B59FFB500327A56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46A2E6FC1B59FFB500327A56 /* Contrast Bath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A2E71C1B59FFB500327A56 /* Build configuration list for PBXNativeTarget "Contrast Bath" */;
+			buildPhases = (
+				46A2E6F91B59FFB500327A56 /* Sources */,
+				46A2E6FA1B59FFB500327A56 /* Frameworks */,
+				46A2E6FB1B59FFB500327A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Contrast Bath";
+			productName = "Contrast Bath";
+			productReference = 46A2E6FD1B59FFB500327A56 /* Contrast Bath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46A2E7111B59FFB500327A56 /* Contrast BathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A2E71F1B59FFB500327A56 /* Build configuration list for PBXNativeTarget "Contrast BathTests" */;
+			buildPhases = (
+				46A2E70E1B59FFB500327A56 /* Sources */,
+				46A2E70F1B59FFB500327A56 /* Frameworks */,
+				46A2E7101B59FFB500327A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46A2E7141B59FFB500327A56 /* PBXTargetDependency */,
+			);
+			name = "Contrast BathTests";
+			productName = "Contrast BathTests";
+			productReference = 46A2E7121B59FFB500327A56 /* Contrast BathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46A2E6F51B59FFB500327A56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Sara Ford";
+				TargetAttributes = {
+					46A2E6FC1B59FFB500327A56 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					46A2E7111B59FFB500327A56 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 46A2E6FC1B59FFB500327A56;
+					};
+				};
+			};
+			buildConfigurationList = 46A2E6F81B59FFB500327A56 /* Build configuration list for PBXProject "Contrast Bath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46A2E6F41B59FFB500327A56;
+			productRefGroup = 46A2E6FE1B59FFB500327A56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46A2E6FC1B59FFB500327A56 /* Contrast Bath */,
+				46A2E7111B59FFB500327A56 /* Contrast BathTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46A2E6FB1B59FFB500327A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A2E7081B59FFB500327A56 /* Main.storyboard in Resources */,
+				46A2E70D1B59FFB500327A56 /* LaunchScreen.xib in Resources */,
+				46A2E70A1B59FFB500327A56 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A2E7101B59FFB500327A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46A2E6F91B59FFB500327A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A2E7051B59FFB500327A56 /* ViewController.swift in Sources */,
+				46A2E7031B59FFB500327A56 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A2E70E1B59FFB500327A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A2E7191B59FFB500327A56 /* Contrast_BathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46A2E7141B59FFB500327A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46A2E6FC1B59FFB500327A56 /* Contrast Bath */;
+			targetProxy = 46A2E7131B59FFB500327A56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46A2E7061B59FFB500327A56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A2E7071B59FFB500327A56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46A2E70B1B59FFB500327A56 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46A2E70C1B59FFB500327A56 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46A2E71A1B59FFB500327A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46A2E71B1B59FFB500327A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46A2E71D1B59FFB500327A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Contrast Bath/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46A2E71E1B59FFB500327A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Contrast Bath/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		46A2E7201B59FFB500327A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Contrast BathTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contrast Bath.app/Contrast Bath";
+			};
+			name = Debug;
+		};
+		46A2E7211B59FFB500327A56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Contrast BathTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contrast Bath.app/Contrast Bath";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46A2E6F81B59FFB500327A56 /* Build configuration list for PBXProject "Contrast Bath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A2E71A1B59FFB500327A56 /* Debug */,
+				46A2E71B1B59FFB500327A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A2E71C1B59FFB500327A56 /* Build configuration list for PBXNativeTarget "Contrast Bath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A2E71D1B59FFB500327A56 /* Debug */,
+				46A2E71E1B59FFB500327A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46A2E71F1B59FFB500327A56 /* Build configuration list for PBXNativeTarget "Contrast BathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A2E7201B59FFB500327A56 /* Debug */,
+				46A2E7211B59FFB500327A56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46A2E6F51B59FFB500327A56 /* Project object */;
+}
