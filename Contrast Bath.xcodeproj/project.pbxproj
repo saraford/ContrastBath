@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		46A2E7031B59FFB500327A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7021B59FFB500327A56 /* AppDelegate.swift */; };
-		46A2E7051B59FFB500327A56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7041B59FFB500327A56 /* ViewController.swift */; };
-		46A2E7081B59FFB500327A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E7061B59FFB500327A56 /* Main.storyboard */; };
 		46A2E70A1B59FFB500327A56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E7091B59FFB500327A56 /* Images.xcassets */; };
 		46A2E70D1B59FFB500327A56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E70B1B59FFB500327A56 /* LaunchScreen.xib */; };
 		46A2E7191B59FFB500327A56 /* Contrast_BathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7181B59FFB500327A56 /* Contrast_BathTests.swift */; };
+		46A2E7291B5A01D500327A56 /* HelpAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7281B5A01D500327A56 /* HelpAboutViewController.swift */; };
+		46A2E72D1B5A023200327A56 /* HelpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E72C1B5A023200327A56 /* HelpButton.swift */; };
+		46A2E7301B5A02B400327A56 /* TimerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E72F1B5A02B400327A56 /* TimerPickerViewController.swift */; };
+		46A2E7321B5A03D300327A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E7311B5A03D300327A56 /* Main.storyboard */; };
+		46A2E7341B5A067C00327A56 /* ContrastBathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7331B5A067C00327A56 /* ContrastBathViewController.swift */; };
+		46A2E7361B5A094C00327A56 /* IronBacon.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E7351B5A094C00327A56 /* IronBacon.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		46A2E6FD1B59FFB500327A56 /* Contrast Bath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contrast Bath.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A2E7011B59FFB500327A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46A2E7021B59FFB500327A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46A2E7041B59FFB500327A56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46A2E7071B59FFB500327A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46A2E7091B59FFB500327A56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46A2E70C1B59FFB500327A56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		46A2E7121B59FFB500327A56 /* Contrast BathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contrast BathTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A2E7171B59FFB500327A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46A2E7181B59FFB500327A56 /* Contrast_BathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contrast_BathTests.swift; sourceTree = "<group>"; };
+		46A2E7281B5A01D500327A56 /* HelpAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpAboutViewController.swift; sourceTree = "<group>"; };
+		46A2E72C1B5A023200327A56 /* HelpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpButton.swift; sourceTree = "<group>"; };
+		46A2E72F1B5A02B400327A56 /* TimerPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerPickerViewController.swift; sourceTree = "<group>"; };
+		46A2E7311B5A03D300327A56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		46A2E7331B5A067C00327A56 /* ContrastBathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContrastBathViewController.swift; sourceTree = "<group>"; };
+		46A2E7351B5A094C00327A56 /* IronBacon.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IronBacon.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				46A2E7021B59FFB500327A56 /* AppDelegate.swift */,
-				46A2E7041B59FFB500327A56 /* ViewController.swift */,
-				46A2E7061B59FFB500327A56 /* Main.storyboard */,
+				46A2E7311B5A03D300327A56 /* Main.storyboard */,
 				46A2E7091B59FFB500327A56 /* Images.xcassets */,
 				46A2E70B1B59FFB500327A56 /* LaunchScreen.xib */,
 				46A2E7001B59FFB500327A56 /* Supporting Files */,
+				46A2E7281B5A01D500327A56 /* HelpAboutViewController.swift */,
+				46A2E72C1B5A023200327A56 /* HelpButton.swift */,
+				46A2E7351B5A094C00327A56 /* IronBacon.m4a */,
+				46A2E72F1B5A02B400327A56 /* TimerPickerViewController.swift */,
+				46A2E7331B5A067C00327A56 /* ContrastBathViewController.swift */,
 			);
 			path = "Contrast Bath";
 			sourceTree = "<group>";
@@ -192,9 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46A2E7081B59FFB500327A56 /* Main.storyboard in Resources */,
+				46A2E7361B5A094C00327A56 /* IronBacon.m4a in Resources */,
 				46A2E70D1B59FFB500327A56 /* LaunchScreen.xib in Resources */,
 				46A2E70A1B59FFB500327A56 /* Images.xcassets in Resources */,
+				46A2E7321B5A03D300327A56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46A2E7051B59FFB500327A56 /* ViewController.swift in Sources */,
+				46A2E72D1B5A023200327A56 /* HelpButton.swift in Sources */,
+				46A2E7301B5A02B400327A56 /* TimerPickerViewController.swift in Sources */,
+				46A2E7341B5A067C00327A56 /* ContrastBathViewController.swift in Sources */,
 				46A2E7031B59FFB500327A56 /* AppDelegate.swift in Sources */,
+				46A2E7291B5A01D500327A56 /* HelpAboutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		46A2E7061B59FFB500327A56 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46A2E7071B59FFB500327A56 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46A2E70B1B59FFB500327A56 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

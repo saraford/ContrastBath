@@ -18,7 +18,12 @@ class HelpAboutViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        HelpAboutText.text = "Use at own risk! This app comes with no guarantees and no warrantees. Please test this app first prior to use or use a backup timer to make sure this app meets your needs.\n\nHey! Thanks for using my contrast bath timer. I wrote this app so I could read a funny book (e.g. Terry Pratchett) while doing the contrast baths for my leg, instead of having to pay diligent attention to a timer and feeling sorry for myself.\n\nFor best results, please keep app running, i.e. don't hit home or switch apps. I've done my best to make sure it still works if you forget and start reading email or facebook, but this is my first iPhone app that I wrote in my nights and weekends becuase I thought it might be helpful, so I might have missed a few things.\n\nI love feedback! I've use this app every night for 2 months to test it out, but you might find or need things I'm not aware of, so I welcome your feedback!\n\nCheers!\n\nCopyright (c) 2015 Sara Ford. All rights reserved."
+        HelpAboutText.text =
+            "Use at own risk! This app comes with no guarantees and no warrantees. Please test this app first prior to use or use a backup timer to make sure this app meets your needs. For best results, please allow Contrast Bath to play sounds and send you notifications.\n\n" +
+            "Hey! Thanks for using my contrast bath timer. I wrote this app so I could read a funny book (e.g. Terry Pratchett) while doing the contrast baths for my leg, instead of having to pay diligent attention to a timer and feeling sorry for myself.\n\n" +
+            "For best results, please keep app running, e.g. don't hit home or switch apps. I've done my best to make sure it still works if you start reading email or facebook. This is my first iPhone app that I wrote in my nights and weekends, so I really hope it is helpful.\n\n" +
+            "I love feedback! I've use this app every night for 2 months to test it out, but you might find or need things I'm not aware of, so I welcome your feedback!\n\n" +
+            "Cheers!\n\nCopyright (c) 2015 Sara Ford. All rights reserved."
         
         
         HelpAboutText.font = UIFont(name: HelpAboutText.font.fontName, size: 18)

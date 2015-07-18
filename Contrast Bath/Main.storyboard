@@ -169,6 +169,7 @@
                         <outlet property="coldView" destination="pKk-lQ-JC4" id="OdM-hC-7x0"/>
                         <outlet property="displayTimeButton" destination="XOc-YO-HMO" id="biH-4A-EX2"/>
                         <outlet property="displayTimeLabel" destination="PaN-nJ-WXP" id="Rpf-t0-ZVq"/>
+                        <outlet property="helpAboutButton" destination="lPO-BW-eHz" id="gHq-i1-jCS"/>
                         <outlet property="hotLabel" destination="36g-1U-jgm" id="s3Q-23-LKu"/>
                         <outlet property="hotView" destination="C3c-fu-daF" id="mjE-4l-SeO"/>
                         <outlet property="miscTub1Text" destination="I2v-Xt-iy3" id="acf-be-THH"/>
