@@ -66,6 +66,7 @@ class ContrastBathViewController: UIViewController {
     @IBOutlet weak var miscTub1Text: UILabel!
     @IBOutlet weak var miscTub2Text: UILabel!
     @IBOutlet weak var startInHotLabel: UILabel!
+    @IBOutlet weak var helpAboutButton: HelpButton!
     
     // for handling missed/ignored notifications
     private var foregroundNotification: NSObjectProtocol!
@@ -175,6 +176,7 @@ class ContrastBathViewController: UIViewController {
         
         // now you can enter debug mode. can't enter debug mode while running.
         DebugButton.enabled = true
+        helpAboutButton.enabled = true
     }
     
     @IBAction func startStopTimer(sender: AnyObject) {
@@ -196,6 +198,7 @@ class ContrastBathViewController: UIViewController {
             
             //too late to enter debug mode
             DebugButton.enabled = false
+            helpAboutButton.enabled = false
             
             startTimer()
         }
