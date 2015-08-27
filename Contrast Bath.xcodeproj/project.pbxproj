@@ -419,6 +419,7 @@
 				46A2E71E1B59FFB500327A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46A2E71F1B59FFB500327A56 /* Build configuration list for PBXNativeTarget "Contrast BathTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +428,7 @@
 				46A2E7211B59FFB500327A56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

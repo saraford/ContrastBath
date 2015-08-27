@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         // Do something serious in a real app.
         
-        println("Received Local Notification: \(notification.alertBody)")
+       // NSLog("Received Local Notification: \(notification.alertBody)")
         
         NSNotificationCenter.defaultCenter().postNotificationName("SwitchTubs", object: self)
     }
@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         
         //ROBERT: this doesn't fire when the app is background *and* is terminated. E.g. 1. launch app, 2. press home 3. switch to another app. 4. double-tap and kill this app
-        NSLog("I'll be back")
+        //NSLog("I'll be back")
         NSNotificationCenter.defaultCenter().postNotificationName("Terminating", object: self)
     }
     

@@ -19,11 +19,14 @@ class HelpAboutViewController: UIViewController {
         
         
         HelpAboutText.text =
-            "Use at own risk! This app comes with no guarantees and no warrantees. Please test this app first prior to use or use a backup timer to make sure this app meets your needs. For best results, please allow Contrast Bath to play sounds and send you notifications.\n\n" +
+            "Use at own risk! This app comes with no guarantees and no warrantees. Please test this app first prior to use or use a backup timer to make sure this app meets your needs. Read more re test mode below. To hear and see the alarm go off when it is time to switch tubs, please allow Contrast Bath to send you notifications.\n\n" +
             "Hey! Thanks for using my contrast bath timer. I wrote this app so I could read a funny book (e.g. Terry Pratchett) while doing the contrast baths for my leg, instead of having to pay diligent attention to a timer and feeling sorry for myself.\n\n" +
             "For best results, please keep app running, e.g. don't hit home or switch apps. I've done my best to make sure it still works if you start reading email or facebook. This is my first iPhone app that I wrote in my nights and weekends, so I really hope it is helpful.\n\n" +
             "I love feedback! I've use this app every night for 2 months to test it out, but you might find or need things I'm not aware of, so I welcome your feedback!\n\n" +
-            "Cheers!\n\nCopyright (c) 2015 Sara Ford. All rights reserved."
+            "Alarm music is a trimmed 8 second version of Iron Bacon by Kevin MacLeod (incompetech.com)\n" +
+            "Licensed under Creative Commons: By Attribution 3.0\n" +
+            "http://creativecommons.org/licenses/by/3.0/\n\n" +
+            "Copyright (c) 2015 Sara Ford. All rights reserved."
         
         
         HelpAboutText.font = UIFont(name: HelpAboutText.font.fontName, size: 18)

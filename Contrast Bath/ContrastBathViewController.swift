@@ -13,7 +13,7 @@ import AVFoundation
 // the minutes picked back to this main view controller
 extension ContrastBathViewController: TimePickedDelegate {
     func updateData(data: String) {
-        NSLog("getting data from TimePickerDelegate")
+       // NSLog("getting data from TimePickerDelegate")
         
         self.desiredTime = data.toInt()
         self.displayTimeButton.setTitle("\(desiredTime):00", forState: UIControlState.Normal)
@@ -125,7 +125,7 @@ class ContrastBathViewController: UIViewController {
                     // if Now > myStopTime, either user tapped or opened app after missing notification. either way we need to stop and clear the notifications
                     if (NSDate().compare(self.myStopTime) == .OrderedDescending) {
                         
-                        NSLog("we're here")
+                     //   NSLog("we're here")
                         
                         // pretend the user hit the notification
                         self.showAlertForSwitchFromNotification()
@@ -138,7 +138,7 @@ class ContrastBathViewController: UIViewController {
             }
         }
         
-        NSLog("I've loaded")
+        //NSLog("I've loaded")
     }
     
     deinit {
@@ -165,7 +165,7 @@ class ContrastBathViewController: UIViewController {
     
     func resetToDefaults() {
         
-        println("resetToDefaults")
+        //println("resetToDefaults")
         
         // use 10 minutes for overall time and 60 seconds in each minute
         desiredTime = defaultTotalMinutes;
@@ -259,7 +259,7 @@ class ContrastBathViewController: UIViewController {
         let hours = (interval / 3600)
         var str = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
         
-        NSLog("Time Interval is \(str)")
+        //NSLog("Time Interval is \(str)")
     }
     
     func printDate(date:NSDate) {
@@ -267,7 +267,7 @@ class ContrastBathViewController: UIViewController {
         formatter.dateFormat = "HH:mm:ss";
         let defaultTimeZoneStr = formatter.stringFromDate(date);
         
-        NSLog(defaultTimeZoneStr);
+       // NSLog(defaultTimeZoneStr);
     }
     
     // Oh boy oh boy! here we go!!!
@@ -276,10 +276,10 @@ class ContrastBathViewController: UIViewController {
         
         // so we grab the current time and the time 1 minute into the future and log
         startTime = NSDate()
-        println("Start time at...")
+      //  println("Start time at...")
         printDate(startTime)
         myStopTime = NSDate(timeIntervalSinceNow: NSTimeInterval(secondsInMinute))
-        println("Stop time at...")
+     //   println("Stop time at...")
         printDate(myStopTime)
         
         // this minuteTimer is ONLY used to display the timer countdown in the UI
@@ -303,7 +303,7 @@ class ContrastBathViewController: UIViewController {
     
     func stopTimer() {
         minuteTimer.invalidate()
-        NSLog("timer stopped")
+     //   NSLog("timer stopped")
     }
     
     // the actual NSTimer loop - this is only used to update the 9:59 text and nothing else
@@ -344,10 +344,10 @@ class ContrastBathViewController: UIViewController {
     
     func showAlertForSwitch(playAlarm: Bool)  {
         
-        NSLog("I'm stopping the timer")
+      //  NSLog("I'm stopping the timer")
         var trueStopTime = NSDate()
         
-        NSLog("Stop Time:")
+     //   NSLog("Stop Time:")
         printDate(trueStopTime)
         
         stopTimer()
