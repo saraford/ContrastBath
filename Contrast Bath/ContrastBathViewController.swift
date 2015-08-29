@@ -38,12 +38,29 @@ extension UIColor {
     }
 }
 
+// for enabling debug mode from the help about page
+var secondsInMinute:Int = 60
+let debugSecondsInMinute = 10
+let realSecondsInMinute = 60
+
+var debugModeOn:Bool = false {
+didSet {
+    
+    if (debugModeOn) {
+        secondsInMinute = debugSecondsInMinute
+    }
+    else {
+        
+        secondsInMinute = realSecondsInMinute
+    }
+    
+}
+}
+
 // Main VC - was called "StopWatch" or "SW" in the original sample app
 class ContrastBathViewController: UIViewController {
     
     let defaultTotalMinutes:Int = 10
-    let debugSecondsInMinute = 10
-    let realSecondsInMinute = 60
     let smallFontSize:CGFloat = 17;
     let largeFontSize:CGFloat = 24;
     
@@ -57,7 +74,6 @@ class ContrastBathViewController: UIViewController {
     // used to count whether we're switting to hot or switching to cold.
     var tubCounter:Int = 1;
     
-    var secondsInMinute:Int!
     var totalTime:Int!
     var totalMinuteTime:Int!
     var minutes:Int!
@@ -169,7 +185,7 @@ class ContrastBathViewController: UIViewController {
         
         // use 10 minutes for overall time and 60 seconds in each minute
         desiredTime = defaultTotalMinutes;
-        secondsInMinute = realSecondsInMinute
+       // secondsInMinute = realSecondsInMinute
         
         // finish resetting the UI
         resetUI()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -296,28 +296,36 @@
                                     <action selector="closeHelpAbout:" destination="Hxk-Gq-jke" eventType="touchUpInside" id="bEu-AE-Jrd"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBV-x9-IKU">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EBV-x9-IKU">
                                 <rect key="frame" x="535" y="544" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleDebugMode:" destination="Hxk-Gq-jke" eventType="valueChanged" id="pJT-oN-YXe"/>
+                                </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2L-l9-ZqK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2L-l9-ZqK">
                                 <rect key="frame" x="447" y="549" width="80" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="S4q-85-GES" firstAttribute="top" secondItem="7fr-as-iYH" secondAttribute="bottom" id="BRY-2R-gqZ"/>
+                            <constraint firstItem="f2L-l9-ZqK" firstAttribute="centerY" secondItem="EBV-x9-IKU" secondAttribute="centerY" id="CVn-pq-vDZ"/>
                             <constraint firstAttribute="centerX" secondItem="9Tq-1D-iLV" secondAttribute="centerX" id="GJm-9W-5EQ"/>
                             <constraint firstItem="9Tq-1D-iLV" firstAttribute="top" secondItem="S4q-85-GES" secondAttribute="bottom" constant="8" id="POl-0Q-YRB"/>
+                            <constraint firstItem="Q7f-LW-RiV" firstAttribute="top" secondItem="EBV-x9-IKU" secondAttribute="bottom" constant="25" id="Uxc-XX-ogt"/>
                             <constraint firstItem="Q7f-LW-RiV" firstAttribute="top" secondItem="9Tq-1D-iLV" secondAttribute="bottom" constant="20" id="VpQ-ut-zdV"/>
                             <constraint firstAttribute="centerX" secondItem="S4q-85-GES" secondAttribute="centerX" id="izI-gH-JEf"/>
+                            <constraint firstItem="EBV-x9-IKU" firstAttribute="trailing" secondItem="HMl-pm-cpj" secondAttribute="trailingMargin" id="j46-q9-RgQ"/>
+                            <constraint firstItem="EBV-x9-IKU" firstAttribute="leading" secondItem="f2L-l9-ZqK" secondAttribute="trailing" constant="8" id="jCC-Jv-eBv"/>
                             <constraint firstItem="S4q-85-GES" firstAttribute="leading" secondItem="HMl-pm-cpj" secondAttribute="leadingMargin" id="qZ5-6D-idY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="HelpAboutText" destination="S4q-85-GES" id="Fr9-7H-c7V"/>
+                        <outlet property="debugMode" destination="EBV-x9-IKU" id="VSq-R7-Ubz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzi-2q-IOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
