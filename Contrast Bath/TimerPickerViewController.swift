@@ -33,7 +33,7 @@ class TimerPickerViewController: UIViewController, UIPickerViewDelegate {
         lightboxView.layer.cornerRadius = 10.0
         lightboxView.layer.masksToBounds = true
         
-        var index = find(minutesToPickFrom, prevSelectedTime)!
+        let index = minutesToPickFrom.indexOf(prevSelectedTime)!
         timePicker.selectRow(index, inComponent: 0, animated: true)
     }
     
@@ -58,14 +58,14 @@ class TimerPickerViewController: UIViewController, UIPickerViewDelegate {
         return minutesToPickFrom.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         return minutesToPickFrom[row]
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        var timeSelected = minutesToPickFrom[row]
+        let timeSelected = minutesToPickFrom[row]
         self.delegate?.updateData(timeSelected)
         
     }

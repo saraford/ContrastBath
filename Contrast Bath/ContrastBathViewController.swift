@@ -15,7 +15,7 @@ extension ContrastBathViewController: TimePickedDelegate {
     func updateData(data: String) {
        // NSLog("getting data from TimePickerDelegate")
         
-        self.desiredTime = data.toInt()
+        self.desiredTime = Int(data)
         self.displayTimeButton.setTitle("\(desiredTime):00", forState: UIControlState.Normal)
         
         // totalMinuteTime tracks # of minutes left
@@ -133,7 +133,7 @@ class ContrastBathViewController: UIViewController {
             if (self.minuteTimer.valid) {
                 
                 // from docs: current scheduled local notifications - a notification is only current if it has *not* gone off yet. otherwise this list will be 0.
-                var notifications = UIApplication.sharedApplication().scheduledLocalNotifications as! [UILocalNotification]
+                let notifications = UIApplication.sharedApplication().scheduledLocalNotifications! as [UILocalNotification]
                 
                 // if the count is 0, means either user has tapped notification or has missed it
                 if (notifications.count == 0) {
@@ -165,7 +165,7 @@ class ContrastBathViewController: UIViewController {
     
     @IBAction func ShowTimerPicker(sender: UIButton) {
         
-        var timerPickerVC = self.storyboard?.instantiateViewControllerWithIdentifier("myTimerPicker") as! TimerPickerViewController
+        let timerPickerVC = self.storyboard?.instantiateViewControllerWithIdentifier("myTimerPicker") as! TimerPickerViewController
         
         // all this stuff needed to get the lightbox control effect
         timerPickerVC.providesPresentationContextTransitionStyle = true
@@ -273,17 +273,17 @@ class ContrastBathViewController: UIViewController {
         let seconds = interval % secondsInMinute
         let minutes = (interval / 60) % 60
         let hours = (interval / 3600)
-        var str = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
-        
-        //NSLog("Time Interval is \(str)")
+
+        let str = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+        NSLog("Time Interval is \(str)")
     }
     
     func printDate(date:NSDate) {
-        var formatter = NSDateFormatter();
+        let formatter = NSDateFormatter();
         formatter.dateFormat = "HH:mm:ss";
-        let defaultTimeZoneStr = formatter.stringFromDate(date);
         
-       // NSLog(defaultTimeZoneStr);
+        let defaultTimeZoneStr = formatter.stringFromDate(date);
+        NSLog(defaultTimeZoneStr);
     }
     
     // Oh boy oh boy! here we go!!!
@@ -307,7 +307,7 @@ class ContrastBathViewController: UIViewController {
         skipBecauseUserDidNotTapNotification = false
         
         // schedule local notification
-        var notification = UILocalNotification()
+        let notification = UILocalNotification()
         notification.alertBody = "Switch tubs!"
         notification.alertAction = "It's time to switch tubs!!"
         //ROBERT: Why oh why won't this work? I've tried every stackoverflow q&a i could find.
@@ -326,9 +326,9 @@ class ContrastBathViewController: UIViewController {
     func updateMinuteTime() {
         
         //Find the difference between current time and the original start time
-        var timeElapsed:NSTimeInterval = NSDate().timeIntervalSinceDate(startTime)
-        var secondsElapsed = Int(round(timeElapsed))
-        var displayTime = secondsInMinute - secondsElapsed
+        let timeElapsed:NSTimeInterval = NSDate().timeIntervalSinceDate(startTime)
+        let secondsElapsed = Int(round(timeElapsed))
+        let displayTime = secondsInMinute - secondsElapsed
         
         //        printTimeInterval(timeElapsed)
         
@@ -361,7 +361,7 @@ class ContrastBathViewController: UIViewController {
     func showAlertForSwitch(playAlarm: Bool)  {
         
       //  NSLog("I'm stopping the timer")
-        var trueStopTime = NSDate()
+        let trueStopTime = NSDate()
         
      //   NSLog("Stop Time:")
         printDate(trueStopTime)
@@ -433,13 +433,15 @@ class ContrastBathViewController: UIViewController {
     
     // cut and pasted from SO
     func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer  {
-        var path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
-        var url = NSURL.fileURLWithPath(path!)
-        
-        var error: NSError?
+        let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        let url = NSURL.fileURLWithPath(path!)
         
         var audioPlayer:AVAudioPlayer?
-        audioPlayer = AVAudioPlayer(contentsOfURL: url, error: &error)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOfURL: url)
+        } catch let _ as NSError {
+            audioPlayer = nil
+        }
         
         return audioPlayer!
     }

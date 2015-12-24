@@ -23,7 +23,7 @@ class HelpButton: UIButton {
         let startAngle: CGFloat = 0.0
         let endAngle: CGFloat = 2 * π
         
-        var path = UIBezierPath(arcCenter: center,
+        let path = UIBezierPath(arcCenter: center,
             radius: radius/2 - arcWidth/2,
             startAngle: startAngle,
             endAngle: endAngle,
