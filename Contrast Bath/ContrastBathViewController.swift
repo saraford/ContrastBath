@@ -43,6 +43,7 @@ var secondsInMinute:Int = 60
 let debugSecondsInMinute = 10
 let realSecondsInMinute = 60
 
+// used by the HelpAbout Test mode button
 var debugModeOn:Bool = false {
 didSet {
     
@@ -88,11 +89,11 @@ class ContrastBathViewController: UIViewController {
     // if true, user opened app without tapping notification so we need to skip the real notification
     var skipBecauseUserDidNotTapNotification:Bool = false;
     
+    @IBOutlet weak var DebugModeWarning: UILabel!
     @IBOutlet weak var startStopButton: UIButton!
     @IBOutlet var displayTimeButton: UIButton!
     @IBOutlet weak var hotView: UIView!
     @IBOutlet weak var coldView: UIView!
-    @IBOutlet weak var DebugButton: UIButton!
     @IBOutlet weak var displayTimeLabel: UILabel!
     @IBOutlet weak var coldLabel: UILabel!
     @IBOutlet weak var hotLabel: UILabel!
@@ -163,6 +164,16 @@ class ContrastBathViewController: UIViewController {
         NSNotificationCenter.defaultCenter().removeObserver(foregroundNotification)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        
+        if (debugModeOn) {
+            DebugModeWarning.hidden = false;
+        } else {
+            DebugModeWarning.hidden = true;
+        }
+        
+    }
+    
     @IBAction func ShowTimerPicker(sender: UIButton) {
         
         let timerPickerVC = self.storyboard?.instantiateViewControllerWithIdentifier("myTimerPicker") as! TimerPickerViewController
@@ -208,7 +219,6 @@ class ContrastBathViewController: UIViewController {
         UIApplication.sharedApplication().cancelAllLocalNotifications()
         
         // now you can enter debug mode. can't enter debug mode while running.
-        DebugButton.enabled = true
         helpAboutButton.enabled = true
         helpAboutButton.outlineColor = colorEnabled
         helpAboutButton.setTitleColor(colorEnabled, forState: UIControlState.Normal)
@@ -232,7 +242,6 @@ class ContrastBathViewController: UIViewController {
             displayTimeLabel.text = "\(desiredTime):00"
             
             //too late to enter debug mode
-            DebugButton.enabled = false
             helpAboutButton.enabled = false
             helpAboutButton.outlineColor = colorDisabled
             helpAboutButton.setTitleColor(colorDisabled, forState: UIControlState.Normal)
@@ -249,24 +258,24 @@ class ContrastBathViewController: UIViewController {
         }
     }
     
-    // for the debug mode. it's only enabled when NSTimer isn't running
-    var debugModeEnabled:Bool = false
-    @IBAction func useDebugMode(sender: UIButton) {
-        
-        if (debugModeEnabled) {
-            // turn off debug mode
-            debugModeEnabled = false;
-            DebugButton.backgroundColor = UIColor.whiteColor()
-            secondsInMinute = realSecondsInMinute
-        }
-        else {
-            // turn on debug mode
-            debugModeEnabled = true;
-            DebugButton.backgroundColor = UIColor.lightGrayColor()
-            secondsInMinute = debugSecondsInMinute
-        }
-        
-    }
+//    // for the debug mode. it's only enabled when NSTimer isn't running
+//    var debugModeEnabled:Bool = false
+//    @IBAction func useDebugModeUI() {
+//        
+//        if (debugModeEnabled) {
+//            // turn off debug mode
+//            debugModeEnabled = false;
+//            DebugModeWarning.hidden = true;
+//            secondsInMinute = realSecondsInMinute
+//        }
+//        else {
+//            // turn on debug mode
+//            debugModeEnabled = true;
+//            DebugModeWarning.hidden = false;
+//            secondsInMinute = debugSecondsInMinute
+//        }
+//        
+//    }
     
     func printTimeInterval(interval:NSTimeInterval) {
         let interval = Int(interval)
@@ -439,8 +448,9 @@ class ContrastBathViewController: UIViewController {
         var audioPlayer:AVAudioPlayer?
         do {
             audioPlayer = try AVAudioPlayer(contentsOfURL: url)
-        } catch let _ as NSError {
+        } catch let error as NSError {
             audioPlayer = nil
+            print(error)
         }
         
         return audioPlayer!

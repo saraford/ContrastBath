@@ -22,13 +22,13 @@
                                 <rect key="frame" x="301" y="20" width="299" height="500"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foot in cold water" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGS-gf-JsT">
-                                        <rect key="frame" x="81.5" y="254.5" width="136.5" height="20.5"/>
+                                        <rect key="frame" x="81" y="254" width="136.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min every iteration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffp-UD-LTs">
-                                        <rect key="frame" x="73.5" y="283" width="153" height="20.5"/>
+                                        <rect key="frame" x="73" y="283" width="153" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                                 <rect key="frame" x="0.0" y="20" width="300" height="500"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foot in hot water" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36g-1U-jgm">
-                                        <rect key="frame" x="85.5" y="255.5" width="129" height="20.5"/>
+                                        <rect key="frame" x="85" y="255" width="129" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min every iteration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2v-Xt-iy3">
-                                        <rect key="frame" x="68.5" y="284.5" width="153" height="20.5"/>
+                                        <rect key="frame" x="68" y="284" width="153" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -84,7 +84,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOc-YO-HMO">
-                                        <rect key="frame" x="170.5" y="16" width="78" height="48"/>
+                                        <rect key="frame" x="170" y="16" width="78" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="10:00">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,7 +95,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwr-VK-w9X">
-                                        <rect key="frame" x="420.5" y="16" width="64" height="48"/>
+                                        <rect key="frame" x="420" y="16" width="64" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -136,36 +136,34 @@
                                     <constraint firstItem="XOc-YO-HMO" firstAttribute="baseline" secondItem="PaN-nJ-WXP" secondAttribute="baseline" id="uRX-FF-ZXI"/>
                                 </constraints>
                             </view>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3R-of-kPn">
-                                <rect key="frame" x="275" y="0.0" width="51" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Debug"/>
-                                <connections>
-                                    <action selector="useDebugMode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fsu-wD-9Gu"/>
-                                </connections>
-                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning: Test Mode On!! Each minute is 10 seconds." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCU-Ie-4D5">
+                                <rect key="frame" x="8.5" y="41.5" width="583" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="pKk-lQ-JC4" secondAttribute="bottom" constant="80" id="7Fn-WP-Pb9"/>
                             <constraint firstItem="s43-qZ-4Cm" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="7q9-Jk-oqx"/>
                             <constraint firstItem="s43-qZ-4Cm" firstAttribute="trailing" secondItem="pKk-lQ-JC4" secondAttribute="trailing" id="A5B-lH-W3r"/>
-                            <constraint firstItem="s3R-of-kPn" firstAttribute="centerX" secondItem="s43-qZ-4Cm" secondAttribute="centerX" id="EkH-cI-tvQ"/>
+                            <constraint firstItem="mCU-Ie-4D5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JNj-ed-p0a"/>
                             <constraint firstItem="pKk-lQ-JC4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Lpw-gv-LOp"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="C3c-fu-daF" secondAttribute="bottom" constant="80" id="SO7-NI-x3g"/>
                             <constraint firstItem="pKk-lQ-JC4" firstAttribute="leading" secondItem="C3c-fu-daF" secondAttribute="trailing" constant="1" id="TVF-Ev-fpN"/>
                             <constraint firstItem="C3c-fu-daF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="WcZ-i7-31J"/>
                             <constraint firstItem="pKk-lQ-JC4" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailing" id="dYe-Z0-8PW"/>
                             <constraint firstItem="pKk-lQ-JC4" firstAttribute="width" secondItem="C3c-fu-daF" secondAttribute="width" constant="-1" id="hGj-I6-ocM"/>
+                            <constraint firstItem="mCU-Ie-4D5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="21" id="hZY-5b-VKg"/>
                             <constraint firstItem="C3c-fu-daF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="m0x-W8-Ocj"/>
-                            <constraint firstItem="s3R-of-kPn" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="o5m-SZ-cob"/>
                             <constraint firstItem="s43-qZ-4Cm" firstAttribute="leading" secondItem="C3c-fu-daF" secondAttribute="leading" id="pep-gO-QlJ"/>
                             <constraint firstItem="Xwr-VK-w9X" firstAttribute="centerX" secondItem="KGS-gf-JsT" secondAttribute="centerX" constant="2" id="qsh-dU-cVw"/>
                             <constraint firstItem="s43-qZ-4Cm" firstAttribute="top" secondItem="C3c-fu-daF" secondAttribute="bottom" id="wfj-ZJ-Vxe"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DebugButton" destination="s3R-of-kPn" id="QNA-o4-QT7"/>
+                        <outlet property="DebugModeWarning" destination="mCU-Ie-4D5" id="p4k-4h-4Fl"/>
                         <outlet property="coldLabel" destination="KGS-gf-JsT" id="e0w-MF-bvS"/>
                         <outlet property="coldView" destination="pKk-lQ-JC4" id="OdM-hC-7x0"/>
                         <outlet property="displayTimeButton" destination="XOc-YO-HMO" id="biH-4A-EX2"/>
