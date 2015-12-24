@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Contrast Bath/HelpAboutViewController.swift"
-            timestampString = "462501348.855067"
+            timestampString = "472687949.752768"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "toggleDebugMode(_:)"
             landmarkType = "5">
          </BreakpointContent>

@@ -25,7 +25,7 @@ class HelpAboutViewController: UIViewController {
             "If you want to test out this app quickly, turn on test mode at the bottom of this page. This mode set minutes to be only 10 seconds long. Set 10 minutes to just 2 minutes and you can fully test the app end-to-end in less than 30 seconds. Just make sure you turn off test mode before you start using it.\n\n"
             +
             "For best results, please keep app running, e.g. don't hit home or switch apps. I've done my best to make sure it still works if you start reading email or facebook. This is my first iPhone app that I wrote in my nights and weekends, so I really hope it is helpful.\n\n" +
-            "I love feedback! I've use this app every night for 2 months to test it out, but you might find or need things I'm not aware of, so I welcome your feedback!\n\n" +
+            "I love feedback! I've use this app every night for 5 months to test it out, but you might find or need things I'm not aware of, so I welcome your feedback!\n\n" +
             "Alarm music is a trimmed 8 second version of Iron Bacon by Kevin MacLeod (incompetech.com)\n" +
             "Licensed under Creative Commons: By Attribution 3.0\n" +
             "http://creativecommons.org/licenses/by/3.0/\n\n" +
@@ -36,6 +36,12 @@ class HelpAboutViewController: UIViewController {
         
         HelpAboutText.scrollRangeToVisible(NSRange(location:0, length:0))
         
+    }
+    
+    // force to scroll at the top of the view
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        HelpAboutText.setContentOffset(CGPointZero, animated: false)
     }
     
     override func didReceiveMemoryWarning() {
