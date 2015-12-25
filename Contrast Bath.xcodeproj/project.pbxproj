@@ -17,6 +17,7 @@
 		46A2E7321B5A03D300327A56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E7311B5A03D300327A56 /* Main.storyboard */; };
 		46A2E7341B5A067C00327A56 /* ContrastBathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A2E7331B5A067C00327A56 /* ContrastBathViewController.swift */; };
 		46A2E7361B5A094C00327A56 /* IronBacon.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 46A2E7351B5A094C00327A56 /* IronBacon.m4a */; };
+		46D9B2011C2CA6C0006CB97A /* NewReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9B2001C2CA6C0006CB97A /* NewReleaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		46A2E7311B5A03D300327A56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		46A2E7331B5A067C00327A56 /* ContrastBathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContrastBathViewController.swift; sourceTree = "<group>"; };
 		46A2E7351B5A094C00327A56 /* IronBacon.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = IronBacon.m4a; sourceTree = "<group>"; };
+		46D9B2001C2CA6C0006CB97A /* NewReleaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReleaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				46A2E7351B5A094C00327A56 /* IronBacon.m4a */,
 				46A2E72F1B5A02B400327A56 /* TimerPickerViewController.swift */,
 				46A2E7331B5A067C00327A56 /* ContrastBathViewController.swift */,
+				46D9B2001C2CA6C0006CB97A /* NewReleaseViewController.swift */,
 			);
 			path = "Contrast Bath";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				46A2E7341B5A067C00327A56 /* ContrastBathViewController.swift in Sources */,
 				46A2E7031B59FFB500327A56 /* AppDelegate.swift in Sources */,
 				46A2E7291B5A01D500327A56 /* HelpAboutViewController.swift in Sources */,
+				46D9B2011C2CA6C0006CB97A /* NewReleaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

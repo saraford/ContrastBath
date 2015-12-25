@@ -45,18 +45,22 @@ let realSecondsInMinute = 60
 
 // used by the HelpAbout Test mode button
 var debugModeOn:Bool = false {
-didSet {
-    
-    if (debugModeOn) {
-        secondsInMinute = debugSecondsInMinute
-    }
-    else {
+    didSet {
         
-        secondsInMinute = realSecondsInMinute
+        if (debugModeOn) {
+            secondsInMinute = debugSecondsInMinute
+        }
+        else {
+            
+            secondsInMinute = realSecondsInMinute
+        }
+        
     }
-    
 }
-}
+
+// to display the "what's new" message box
+let currentRelease : Int = 12
+
 
 // Main VC - was called "StopWatch" or "SW" in the original sample app
 class ContrastBathViewController: UIViewController {
@@ -163,6 +167,54 @@ class ContrastBathViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().removeObserver(foregroundNotification)
     }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("firstTimeEver") == nil {
+            
+            // if first time ever launched
+            NSUserDefaults.standardUserDefaults().setObject(1, forKey: "firstTimeEver")
+            
+            showNewReleaseLightbox("Hello!\n\nFor this app to work, please allow On My Nerves to send you notifications. You'll be asked in the next popup window.\n\nIf you don't agree, you'll never know when the alarm has gone off! O_o")
+            
+        }
+        else if NSUserDefaults.standardUserDefaults().objectForKey("NewRelease" + String(currentRelease)) == nil {
+            
+            // display what's new if applicable
+            showNewReleaseLightbox("What's new in release 1.1:\n\n• Easier to use 1st time setup UI\n\n• Minor bug fixes\n\n• This \"What's new\" popup window :)")
+            
+            NSUserDefaults.standardUserDefaults().setObject(1, forKey: "NewRelease" + String(currentRelease))
+            
+            // if there was a previous release, delete that bit on disk
+            if NSUserDefaults.standardUserDefaults().objectForKey("NewRelease" + String(currentRelease - 1)) != nil {
+                NSUserDefaults.standardUserDefaults().removeObjectForKey("NewRelease" + String(currentRelease - 1))
+            }
+            
+        }
+        
+        // get a reference to the app delegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        // call didFinishLaunchWithOptions ... why?
+        appDelegate.application(UIApplication.sharedApplication(), didFinishLaunchingWithOptions: nil)
+        
+    }
+    
+    func showNewReleaseLightbox(textToShow:String) {
+        let newReleaseViewController = storyboard?.instantiateViewControllerWithIdentifier("NewRelease") as! NewReleaseViewController
+        
+        // all this stuff needed to get the lightbox control effect
+        newReleaseViewController.providesPresentationContextTransitionStyle = true
+        newReleaseViewController.definesPresentationContext = true
+        newReleaseViewController.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        
+        newReleaseViewController.textToShow = textToShow
+        
+        self.presentViewController(newReleaseViewController, animated: true, completion: nil)
+    }
+
+    
     
     override func viewWillAppear(animated: Bool) {
         
