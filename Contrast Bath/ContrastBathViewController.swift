@@ -168,7 +168,10 @@ class ContrastBathViewController: UIViewController {
         NSNotificationCenter.defaultCenter().removeObserver(foregroundNotification)
     }
     
-    
+    // LONG NOTE TO SELF:
+    // 1. Yes, must be viewDidAppear. Using ViewDidLoad doesn't have a view to launch a view from yet.
+    // 2. No, We're *not* going to tunnel because it is crazy hard and everything is new to them
+    // 3. To simulate auto-update, don't delete the app on simulator first! don't know why I ever forgot this.
     override func viewDidAppear(animated: Bool) {
         
         if NSUserDefaults.standardUserDefaults().objectForKey("firstTimeEver") == nil {
