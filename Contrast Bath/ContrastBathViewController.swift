@@ -179,13 +179,13 @@ class ContrastBathViewController: UIViewController {
             // if first time ever launched
             NSUserDefaults.standardUserDefaults().setObject(1, forKey: "firstTimeEver")
             
-            showNewReleaseLightbox("Hello!\n\nFor this app to work, please allow On My Nerves to send you notifications. You'll be asked in the next popup window.\n\nIf you don't accept, you'll never know when the alarm has gone off! O_o")
+            showNewReleaseLightbox("Hello!\n\nFor this app to work, please allow On My Nerves to send you notifications. You'll be asked in the next popup window.\n\nIf you don't accept, you'll never know when the alarm has gone off! :)")
             
         }
         else if NSUserDefaults.standardUserDefaults().objectForKey("NewRelease" + String(currentRelease)) == nil {
             
             // display what's new if applicable
-            showNewReleaseLightbox("What's new in release 1.1:\n\n• Easier to use 1st time setup UI\n\n• Minor bug fixes\n\n• This \"What's new\" popup window :)")
+            showNewReleaseLightbox("What's new in release 1.2:\n\n• Easier to use 1st time setup UI\n\n• Minor bug fixes\n\n• This \"What's new\" popup window :)")
             
             NSUserDefaults.standardUserDefaults().setObject(1, forKey: "NewRelease" + String(currentRelease))
             
